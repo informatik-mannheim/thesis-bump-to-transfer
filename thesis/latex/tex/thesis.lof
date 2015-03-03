@@ -1,0 +1,45 @@
+\select@language {english}
+\select@language {ngerman}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Bump Tablet-Computer \cite {Hinckley:2003:SGM:964696.964713}\relax }}{6}{figure.caption.3}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Daten aussch\IeC {\"u}tten \cite {HinkleyPic2:Online}\relax }}{6}{figure.caption.3}
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Bump-Geste Smartphones \cite {BumpPicPhone:Online}\relax }}{6}{figure.caption.4}
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Bump-Geste PC \cite {Bump:Online}\relax }}{6}{figure.caption.4}
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Wurf- und Fang-Geste \cite {Yatani:2006:TII:1184855.1184874}\relax }}{7}{figure.caption.5}
+\contentsline {figure}{\numberline {\relax 2.6}{\ignorespaces Schwung-Geste \cite {Yatani:2006:TII:1184855.1184874}\relax }}{7}{figure.caption.5}
+\contentsline {figure}{\numberline {\relax 2.7}{\ignorespaces Hoccer Swipe-Geste \cite {HoccerPics:Online}\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {\relax 2.8}{\ignorespaces Links kippen zum weiterbl\IeC {\"a}ttern \cite {Lucero:2011:PCU:1978942.1979201}\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {\relax 2.9}{\ignorespaces Schwung-Geste Auswahl mehrerer Ziele \cite {Lucero:2011:PCU:1978942.1979201}\relax }}{8}{figure.caption.8}
+\contentsline {figure}{\numberline {\relax 2.10}{\ignorespaces WLAN-Topologien \cite [vgl. Abb. 3.1]{baun2012computernetze}\relax }}{9}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 2.11}{\ignorespaces Bluetooth-Topologie Piconetz \cite [vgl. Abb. 5.4]{baun2012computernetze}\relax }}{11}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 2.12}{\ignorespaces Netzwerkdienste in Computernetzwerken\relax }}{13}{figure.caption.21}
+\contentsline {figure}{\numberline {\relax 2.13}{\ignorespaces Client-Server-Modell\relax }}{13}{figure.caption.23}
+\contentsline {figure}{\numberline {\relax 2.14}{\ignorespaces iBeacon regions\relax }}{16}{figure.caption.30}
+\contentsline {figure}{\numberline {\relax 2.15}{\ignorespaces iBeacon ranging\relax }}{18}{figure.caption.33}
+\contentsline {figure}{\numberline {\relax 2.16}{\ignorespaces 3-Achsen Beschleunigugnssensor \cite {AppleAccelerometer:Online}\relax }}{19}{figure.caption.35}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Aktion des Benutzers\relax }}{22}{figure.caption.36}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Daten \IeC {\"u}bertragen\relax }}{22}{figure.caption.37}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Daten anzeigen\relax }}{22}{figure.caption.37}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Stirnseite an Stirnseite\relax }}{23}{figure.3.4}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces L\IeC {\"a}ngsseite an L\IeC {\"a}ngsseite\relax }}{23}{figure.3.5}
+\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces Ecke an Ecke\relax }}{23}{figure.3.6}
+\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Stirnseite aufsto\IeC {\ss }en\relax }}{23}{figure.3.7}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Session-Phase\relax }}{31}{figure.caption.47}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Bump-Muster Stirnseite an Stirnseite\relax }}{32}{figure.caption.49}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Bump-Muster L\IeC {\"a}ngsseite an L\IeC {\"a}ngsseite\relax }}{33}{figure.caption.51}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Bump-Muster Ecke an Ecke\relax }}{33}{figure.caption.53}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Bump-Muster Stirnseite aufsto\IeC {\ss }en\relax }}{34}{figure.caption.55}
+\contentsline {figure}{\numberline {\relax 4.6}{\ignorespaces Algorithmische Erkennung eines Bumps\relax }}{35}{figure.caption.57}
+\contentsline {figure}{\numberline {\relax 4.7}{\ignorespaces Netzwerkdienste in einem Infrasturkturnetzwerk\relax }}{39}{figure.caption.59}
+\contentsline {figure}{\numberline {\relax 4.8}{\ignorespaces Identifizierung von Netzwerkteilnehmern\relax }}{39}{figure.caption.60}
+\contentsline {figure}{\numberline {\relax 4.9}{\ignorespaces System mit iBeacon UML Diagramm\relax }}{41}{figure.caption.62}
+\contentsline {figure}{\numberline {\relax 4.10}{\ignorespaces System mit iBeacon UML Diagramm\relax }}{42}{figure.caption.63}
+\contentsline {figure}{\numberline {\relax 4.11}{\ignorespaces System mit Timestamp und GPS UML Diagramm\relax }}{43}{figure.caption.65}
+\contentsline {figure}{\numberline {\relax 4.12}{\ignorespaces System mit Timestamp und GPS UML Diagramm\relax }}{44}{figure.caption.66}
+\contentsline {figure}{\numberline {\relax 4.13}{\ignorespaces Sequenzdiagramm Datenaustausch \IeC {\"u}ber Webserver\relax }}{47}{figure.caption.68}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

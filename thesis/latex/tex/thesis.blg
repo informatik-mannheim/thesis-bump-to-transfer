@@ -1,0 +1,89 @@
+This is BibTeX, Version 0.99d (TeX Live 2013)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: alpha.bst
+Database file #1: literatur.bib
+Warning--entry type for "Google2014:Online" isn't style-file defined
+--line 1 of file literatur.bib
+Warning--entry type for "AppleAccelerometer:Online" isn't style-file defined
+--line 71 of file literatur.bib
+Warning--entry type for "AppleLocationServices:Online" isn't style-file defined
+--line 80 of file literatur.bib
+Warning--entry type for "AppleMultipeer:Online" isn't style-file defined
+--line 89 of file literatur.bib
+Warning--entry type for "AppleCollectionTypes:Online" isn't style-file defined
+--line 98 of file literatur.bib
+Warning--string name "okt" is undefined
+--line 101 of file literatur.bib
+Warning--entry type for "AppleMCNearbyServiceAdvertiser:Online" isn't style-file defined
+--line 107 of file literatur.bib
+Warning--string name "okt" is undefined
+--line 110 of file literatur.bib
+Warning--entry type for "AppleNSData:Online" isn't style-file defined
+--line 116 of file literatur.bib
+Warning--entry type for "AndroidDiscovery:Online" isn't style-file defined
+--line 192 of file literatur.bib
+Warning--entry type for "AboutBonjour:Online" isn't style-file defined
+--line 201 of file literatur.bib
+Warning--entry type for "LTE:Online" isn't style-file defined
+--line 227 of file literatur.bib
+Warning--entry type for "HDSPA:Online" isn't style-file defined
+--line 234 of file literatur.bib
+Warning--entry type for "EstimoteBeaconSignal:Online" isn't style-file defined
+--line 241 of file literatur.bib
+Warning--string name "dez" is undefined
+--line 244 of file literatur.bib
+Warning--entry type for "BumpPicPhone:Online" isn't style-file defined
+--line 260 of file literatur.bib
+Warning--entry type for "Bump:Online" isn't style-file defined
+--line 270 of file literatur.bib
+Warning--entry type for "HoccerPics:Online" isn't style-file defined
+--line 280 of file literatur.bib
+Warning--entry type for "HinkleyPic2:Online" isn't style-file defined
+--line 289 of file literatur.bib
+Warning--entry type for "Hoccer:Online" isn't style-file defined
+--line 300 of file literatur.bib
+Warning--string name "okt" is undefined
+--line 303 of file literatur.bib
+You've used 34 entries,
+            2543 wiz_defined-function locations,
+            737 strings with 8808 characters,
+and the built_in function-call counts, 11095 in all, are:
+= -- 1089
+> -- 423
+< -- 30
++ -- 138
+- -- 129
+* -- 622
+:= -- 1748
+add.period$ -- 107
+call.type$ -- 34
+change.case$ -- 186
+chr.to.int$ -- 27
+cite$ -- 34
+duplicate$ -- 467
+empty$ -- 923
+format.name$ -- 187
+if$ -- 2329
+int.to.chr$ -- 8
+int.to.str$ -- 0
+missing$ -- 14
+newline$ -- 174
+num.names$ -- 102
+pop$ -- 305
+preamble$ -- 1
+purify$ -- 222
+quote$ -- 0
+skip$ -- 419
+stack$ -- 0
+substring$ -- 426
+swap$ -- 77
+text.length$ -- 30
+text.prefix$ -- 25
+top$ -- 0
+type$ -- 264
+warning$ -- 0
+while$ -- 93
+width$ -- 36
+write$ -- 426
+(There were 21 warnings)

@@ -1,0 +1,84 @@
+%% Creator: Inkscape inkscape 0.48.5, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'acceleroBump.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{743.83828125bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,1.06474757)%
+    \put(0,0){\includegraphics[width=\unitlength]{acceleroBump.pdf}}%
+    \put(0.30553711,0.81714361){\rotatebox{90}{\makebox(0,0)[lb]{\smash{Acceleration}}}}%
+    \put(0.32515334,0.74273873){\makebox(0,0)[lb]{\smash{-0,6}}}%
+    \put(0.31767658,0.77026864){\makebox(0,0)[lb]{\smash{-0,45}}}%
+    \put(0.32515334,0.79779855){\makebox(0,0)[lb]{\smash{-0,3}}}%
+    \put(0.31767658,0.82532846){\makebox(0,0)[lb]{\smash{-0,15}}}%
+    \put(0.3408421,0.85285823){\makebox(0,0)[lb]{\smash{0}}}%
+    \put(0.32215349,0.88038814){\makebox(0,0)[lb]{\smash{0,15}}}%
+    \put(0.32963025,0.90791805){\makebox(0,0)[lb]{\smash{0,3}}}%
+    \put(0.32215349,0.93544796){\makebox(0,0)[lb]{\smash{0,45}}}%
+    \put(0.32963025,0.96297787){\makebox(0,0)[lb]{\smash{0,6}}}%
+    \put(0.59778693,0.68803221){\makebox(0,0)[lb]{\smash{time in ms}}}%
+    \put(0.35802204,0.7181229){\rotatebox{45}{\makebox(0,0)[lb]{\smash{560}}}}%
+    \put(0.38710753,0.7181229){\rotatebox{45}{\makebox(0,0)[lb]{\smash{600}}}}%
+    \put(0.41619302,0.7181229){\rotatebox{45}{\makebox(0,0)[lb]{\smash{640}}}}%
+    \put(0.44527851,0.7181229){\rotatebox{45}{\makebox(0,0)[lb]{\smash{680}}}}%
+    \put(0.474364,0.7181229){\rotatebox{45}{\makebox(0,0)[lb]{\smash{720}}}}%
+    \put(0.50344935,0.7181229){\rotatebox{45}{\makebox(0,0)[lb]{\smash{760}}}}%
+    \put(0.53253484,0.7181229){\rotatebox{45}{\makebox(0,0)[lb]{\smash{800}}}}%
+    \put(0.56162033,0.7181229){\rotatebox{45}{\makebox(0,0)[lb]{\smash{840}}}}%
+    \put(0.59070582,0.7181229){\rotatebox{45}{\makebox(0,0)[lb]{\smash{880}}}}%
+    \put(0.61979131,0.7181229){\rotatebox{45}{\makebox(0,0)[lb]{\smash{920}}}}%
+    \put(0.6488768,0.7181229){\rotatebox{45}{\makebox(0,0)[lb]{\smash{960}}}}%
+    \put(0.6753187,0.71283599){\rotatebox{45}{\makebox(0,0)[lb]{\smash{1000}}}}%
+    \put(0.70440419,0.71283599){\rotatebox{45}{\makebox(0,0)[lb]{\smash{1040}}}}%
+    \put(0.73348968,0.71283599){\rotatebox{45}{\makebox(0,0)[lb]{\smash{1080}}}}%
+    \put(0.76292564,0.71353682){\rotatebox{45}{\makebox(0,0)[lb]{\smash{1120}}}}%
+    \put(0.79201113,0.71353682){\rotatebox{45}{\makebox(0,0)[lb]{\smash{1160}}}}%
+    \put(0.82074614,0.71283599){\rotatebox{45}{\makebox(0,0)[lb]{\smash{1200}}}}%
+    \put(0.84983163,0.71283599){\rotatebox{45}{\makebox(0,0)[lb]{\smash{1240}}}}%
+    \put(0.87891699,0.71283599){\rotatebox{45}{\makebox(0,0)[lb]{\smash{1280}}}}%
+  \end{picture}%
+\endgroup%

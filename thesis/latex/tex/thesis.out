@@ -1,0 +1,40 @@
+\BOOKMARK [0][-]{chapter.1}{Einleitung}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Problemstellung}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Ziel der Arbeit}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Aufbau der Arbeit}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Stand der Technik}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Grundlagen zum gestenbasierten Transfer von Daten}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Technische Grundlagen}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.1}{Technologien zur Daten\374bertragung}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.2}{Datenkommunikation zwischen mobilen Endger\344ten}{section.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.3}{Technologien zur Ger\344teortung}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.4}{Sensoren}{section.2.2}% 11
+\BOOKMARK [0][-]{chapter.3}{Analyse der Bump-Geste}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Ablauf der Interaktion}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.1.1}{Aktionen des Benutzers}{section.3.1}% 14
+\BOOKMARK [2][-]{subsection.3.1.2}{Reaktion des Systems}{section.3.1}% 15
+\BOOKMARK [1][-]{section.3.2}{Variationen der Bump-Geste}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{Geeignete Endger\344te}{chapter.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Umsetzung der Interaktion}{chapter.3}% 18
+\BOOKMARK [0][-]{chapter.4}{Umsetzung der Interaktion}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Grundlagen zu iOS Frameworks}{chapter.4}% 20
+\BOOKMARK [2][-]{subsection.4.1.1}{Core Motion Framework}{section.4.1}% 21
+\BOOKMARK [2][-]{subsection.4.1.2}{Core Location Framework}{section.4.1}% 22
+\BOOKMARK [2][-]{subsection.4.1.3}{Multipeer Connectivity Framework}{section.4.1}% 23
+\BOOKMARK [1][-]{section.4.2}{Konzept zur Bump-Erkennung}{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.2.1}{Versuchsreihe Bump-Mustererkennung}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.2}{Algorithmus zur Mustererkennung}{section.4.2}% 26
+\BOOKMARK [1][-]{section.4.3}{Konzepte zur Identifizierung von Bump-Partnern}{chapter.4}% 27
+\BOOKMARK [2][-]{subsection.4.3.1}{Identifizierung \374ber iBeacon Ger\344te-IDs}{section.4.3}% 28
+\BOOKMARK [2][-]{subsection.4.3.2}{Identifizierung durch charakteristische Bump-Daten}{section.4.3}% 29
+\BOOKMARK [2][-]{subsection.4.3.3}{Vergleich der Konzepte}{section.4.3}% 30
+\BOOKMARK [1][-]{section.4.4}{Konzepte zum Datenaustausch}{chapter.4}% 31
+\BOOKMARK [2][-]{subsection.4.4.1}{Datenaustausch \374ber lokale Netzwerke}{section.4.4}% 32
+\BOOKMARK [2][-]{subsection.4.4.2}{Datenaustausch \374ber Webserver}{section.4.4}% 33
+\BOOKMARK [2][-]{subsection.4.4.3}{Vergleich der Konzepte}{section.4.4}% 34
+\BOOKMARK [0][-]{chapter.5}{Demonstrator Applikation}{}% 35
+\BOOKMARK [0][-]{chapter.6}{Zusammenfassung und Ausblick}{}% 36
+\BOOKMARK [0][-]{chapter*.73}{Abk\374rzungsverzeichnis}{}% 37
+\BOOKMARK [0][-]{section*.74}{Tabellenverzeichnis}{}% 38
+\BOOKMARK [0][-]{section*.76}{Abbildungsverzeichnis}{}% 39
+\BOOKMARK [0][-]{chapter*.78}{Literaturverzeichnis}{}% 40

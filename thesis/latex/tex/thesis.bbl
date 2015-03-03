@@ -1,0 +1,184 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{WHBW11}
+
+\bibitem[{3GP}a]{HDSPA:Online}
+{3GPP}.
+\newblock Hdspa+. {@ONLINE}.
+\newblock Zuletzt besucht am 15.12.2014.
+
+\bibitem[{3GP}b]{LTE:Online}
+{3GPP}.
+\newblock Lte. {@ONLINE}.
+\newblock Zuletzt besucht am 15.12.2014.
+
+\bibitem[AB12]{agrawal2012near}
+Pankaj Agrawal and Sharad Bhuraria.
+\newblock Near field communication.
+\newblock {\em IT Matters}, 67, 2012.
+
+\bibitem[{App}13a]{AppleMultipeer:Online}
+{Apple Computer}.
+\newblock About multipeer connectivity. {@ONLINE}, September 2013.
+\newblock Zuletzt besucht am 04.01.2015.
+
+\bibitem[{App}13b]{AppleMCNearbyServiceAdvertiser:Online}
+{Apple Computer}.
+\newblock Mcnearbyserviceadvertiser. {@ONLINE}, 2013.
+\newblock Zuletzt besucht am 11.02.2015.
+
+\bibitem[{App}14a]{AboutBonjour:Online}
+{Apple Computer}.
+\newblock About bonjour. {@ONLINE}, April 2014.
+\newblock Zuletzt besucht am 19.02.2015.
+
+\bibitem[{App}14b]{AppleCollectionTypes:Online}
+{Apple Computer}.
+\newblock Collection types. {@ONLINE}, 2014.
+\newblock Zuletzt besucht am 11.02.2015.
+
+\bibitem[{App}14c]{AppleLocationServices:Online}
+{Apple Computer}.
+\newblock ios 7: Grundlagen zu den ortungsdiensten. {@ONLINE}, June 2014.
+\newblock Zuletzt besucht am 15.12.2014.
+
+\bibitem[{App}14d]{AppleNSData:Online}
+{Apple Computer}.
+\newblock Nsdata. {@ONLINE}, September 2014.
+\newblock Zuletzt besucht am 11.02.2015.
+
+\bibitem[{App}15]{AppleAccelerometer:Online}
+{Apple Computer}.
+\newblock Motion events. {@ONLINE}, February 2015.
+\newblock Zuletzt besucht am 15.12.2014.
+
+\bibitem[Bau12]{baun2012computernetze}
+C.~Baun.
+\newblock {\em Computernetze kompakt}.
+\newblock IT kompakt. Springer Berlin Heidelberg, 2012.
+
+\bibitem[{bum}13]{Bump:Online}
+{bump technologies}.
+\newblock Bump your computer. {@ONLINE}, February 2013.
+\newblock Zuletzt besucht am 14.02.2015.
+
+\bibitem[Che02]{cheng2002service}
+Liang Cheng.
+\newblock Service advertisement and discovery in mobile ad hoc networks.
+\newblock In {\em Proc. of CSCW}. Citeseer, 2002.
+
+\bibitem[{Chr}11]{HinkleyPic2:Online}
+{Christian Remse}.
+\newblock Diese neuen technologien plant apple. {@ONLINE}, August 2011.
+\newblock Zuletzt besucht am 15.02.2015.
+
+\bibitem[Com14]{iBeacon:2014}
+Apple Computer.
+\newblock {\em Getting Startet with iBeacon}.
+\newblock Apple Computer, 1 edition, 6 2014.
+
+\bibitem[{Est}14]{EstimoteBeaconSignal:Online}
+{Estimote, Inc.}
+\newblock Beacons' signal characteristics. {@ONLINE}, 2014.
+\newblock Zuletzt besucht am 09.01.2015.
+
+\bibitem[{Goo}12]{Google2014:Online}
+{Google Inc.}
+\newblock The new multi-screen world: Understanding cross-pllattform consumer
+  behavior. {@ONLINE}, August 2012.
+\newblock Zuletzt besucht am 13.10.2014.
+
+\bibitem[{Goo}15]{AndroidDiscovery:Online}
+{Google}.
+\newblock Network service discovery. {@ONLINE}, 2015.
+\newblock Zuletzt besucht am 21.02.2015.
+
+\bibitem[Hin03]{Hinckley:2003:SGM:964696.964713}
+Ken Hinckley.
+\newblock Synchronous gestures for multiple persons and computers.
+\newblock In {\em Proceedings of the 16th Annual ACM Symposium on User
+  Interface Software and Technology}, UIST '03, pages 149--158, New York, NY,
+  USA, 2003. ACM.
+
+\bibitem[{Lan}14]{BumpPicPhone:Online}
+{Landon Robinson}.
+\newblock Bump and flock apps being discontinued this month. {@ONLINE}, January
+  2014.
+\newblock Zuletzt besucht am 14.02.2015.
+
+\bibitem[LG10]{lubbers2010html5}
+Peter Lubbers and Frank Greco.
+\newblock Html5 web sockets: A quantum leap in scalability for the web.
+\newblock {\em SOA World Magazine}, 2010.
+
+\bibitem[LH07]{lando2007efficient}
+Noam Lando and Amit Haller.
+\newblock Efficient server polling system and method, September~28 2007.
+\newblock US Patent App. 11/864,271.
+
+\bibitem[LHJ11]{Lucero:2011:PCU:1978942.1979201}
+Andr{\'e}s Lucero, Jussi Holopainen, and Tero Jokela.
+\newblock Pass-them-around: Collaborative use of mobile phones for photo
+  sharing.
+\newblock In {\em Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, CHI '11, pages 1787--1796, New York, NY, USA, 2011. ACM.
+
+\bibitem[{Maa}11]{Hoccer:Online}
+{Maarten Jansen}.
+\newblock App review: Hoccer. {@ONLINE}, 2011.
+\newblock Zuletzt besucht am 14.02.2015.
+
+\bibitem[RDML05]{ravi2005activity}
+Nishkam Ravi, Nikhil Dandekar, Preetham Mysore, and Michael~L Littman.
+\newblock Activity recognition from accelerometer data.
+\newblock In {\em AAAI}, volume~5, pages 1541--1546, 2005.
+
+\bibitem[Rod08]{rodriguez2008restful}
+Alex Rodriguez.
+\newblock Restful web services: The basics.
+\newblock {\em IBM developerWorks}, 2008.
+
+\bibitem[{sal}]{HoccerPics:Online}
+{salesworker.com GmbH}.
+\newblock Hoccer. {@ONLINE}.
+\newblock Zuletzt besucht am 15.02.2015.
+
+\bibitem[SS12]{schill2012verteilte}
+Alexander Schill and Thomas Springer.
+\newblock {\em Verteilte Systeme: Grundlagen und Basistechnologien}.
+\newblock Springer-Verlag, 2012.
+
+\bibitem[TQD09]{Terrenghi:2009:TAM:1644246.1644265}
+Lucia Terrenghi, Aaron Quigley, and Alan Dix.
+\newblock A taxonomy for and analysis of multi-person-display ecosystems.
+\newblock {\em Personal Ubiquitous Comput.}, 13(8):583--598, November 2009.
+
+\bibitem[WHBW11]{wirtz2011establishing}
+Hanno Wirtz, Tobias Heer, Robert Backhaus, and Klaus Wehrle.
+\newblock Establishing mobile ad-hoc networks in 802.11 infrastructure mode.
+\newblock In {\em Proceedings of the 6th ACM workshop on Challenged networks},
+  pages 49--52. ACM, 2011.
+
+\bibitem[Wik14a]{wiki:GPS}
+Wikipedia.
+\newblock Global positioning system --- wikipedia{,} die freie enzyklopädie,
+  2014.
+\newblock [Online; Stand 15. Dezember 2014].
+
+\bibitem[Wik14b]{wiki:iBeacon}
+Wikipedia.
+\newblock Ibeacon --- wikipedia{,} the free encyclopedia, 2014.
+\newblock [Online; Stand 15-December-2014].
+
+\bibitem[Wik14c]{wiki:WIFI-Direct}
+Wikipedia.
+\newblock Wi-fi direct --- wikipedia{,} the free encyclopedia, 2014.
+\newblock [Online; Stand 28-October-2014].
+
+\bibitem[YTH{\etalchar{+}}06]{Yatani:2006:TII:1184855.1184874}
+Koji Yatani, Koiti Tamura, Keiichi Hiroki, Masanori Sugimoto, and Hiromichi
+  Hashizume.
+\newblock Toss-it: Intuitive information transfer techniques for mobile devices
+  using toss and swing actions.
+\newblock {\em IEICE - Trans. Inf. Syst.}, E89-D(1):150--157, January 2006.
+
+\end{thebibliography}

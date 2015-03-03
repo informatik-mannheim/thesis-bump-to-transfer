@@ -1,0 +1,75 @@
+\select@language {english}
+\select@language {ngerman}
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Problemstellung}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Ziel der Arbeit}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Aufbau der Arbeit}{2}{section.1.3}
+\contentsline {chapter}{\numberline {2}Stand der Technik}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Grundlagen zum gestenbasierten Transfer von Daten}{5}{section.2.1}
+\contentsline {paragraph}{Lucero et al.}{8}{paragraph*.7}
+\contentsline {section}{\numberline {2.2}Technische Grundlagen}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Technologien zur Daten\IeC {\"u}bertragung}{9}{subsection.2.2.1}
+\contentsline {subsubsection}{WLAN}{9}{subsubsection*.9}
+\contentsline {subsubsection}{WIFI-Direct}{10}{subsubsection*.12}
+\contentsline {subsubsection}{Bluetooth Low Energy}{10}{subsubsection*.14}
+\contentsline {subsubsection}{NFC}{11}{subsubsection*.16}
+\contentsline {subsubsection}{Mobilfunk}{12}{subsubsection*.17}
+\contentsline {subsection}{\numberline {2.2.2}Datenkommunikation zwischen mobilen Endger\IeC {\"a}ten}{12}{subsection.2.2.2}
+\contentsline {subsubsection}{Datenkommunikation in lokalen Netzwerken}{12}{subsubsection*.20}
+\contentsline {subsubsection}{Datenkommunikation \IeC {\"u}ber einen Server}{13}{subsubsection*.22}
+\contentsline {subsubsection}{HTTP Operationen}{14}{subsubsection*.24}
+\contentsline {subsubsection}{Web Sockets}{14}{subsubsection*.25}
+\contentsline {subsection}{\numberline {2.2.3}Technologien zur Ger\IeC {\"a}teortung}{15}{subsection.2.2.3}
+\contentsline {subsubsection}{GPS}{15}{subsubsection*.26}
+\contentsline {subsubsection}{iBeacon}{15}{subsubsection*.28}
+\contentsline {paragraph}{Advertising}{15}{paragraph*.29}
+\contentsline {paragraph}{Ranging}{17}{paragraph*.32}
+\contentsline {paragraph}{Region Monitoring}{18}{paragraph*.34}
+\contentsline {subsection}{\numberline {2.2.4}Sensoren}{19}{subsection.2.2.4}
+\contentsline {chapter}{\numberline {3}Analyse der Bump-Geste}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Ablauf der Interaktion}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Aktionen des Benutzers}{21}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Reaktion des Systems}{22}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Variationen der Bump-Geste}{22}{section.3.2}
+\contentsline {subsubsection}{Stirnseite an Stirnseite}{23}{subsubsection*.38}
+\contentsline {subsubsection}{L\IeC {\"a}ngsseite an L\IeC {\"a}ngsseite}{23}{subsubsection*.39}
+\contentsline {subsubsection}{Ecke an Ecke}{23}{subsubsection*.40}
+\contentsline {subsubsection}{Stirnseite aufsto\IeC {\ss }en}{23}{subsubsection*.41}
+\contentsline {section}{\numberline {3.3}Geeignete Endger\IeC {\"a}te}{24}{section.3.3}
+\contentsline {section}{\numberline {3.4}Umsetzung der Interaktion}{25}{section.3.4}
+\contentsline {chapter}{\numberline {4}Umsetzung der Interaktion}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Grundlagen zu iOS Frameworks}{27}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Core Motion Framework}{27}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Core Location Framework}{28}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Multipeer Connectivity Framework}{29}{subsection.4.1.3}
+\contentsline {subsubsection}{Discovery Phase}{29}{subsubsection*.44}
+\contentsline {subsubsection}{Advertising und Browsing}{30}{subsubsection*.45}
+\contentsline {subsubsection}{Session Phase}{31}{subsubsection*.46}
+\contentsline {section}{\numberline {4.2}Konzept zur Bump-Erkennung}{32}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Versuchsreihe Bump-Mustererkennung}{32}{subsection.4.2.1}
+\contentsline {subsubsection}{Stirnseite an Stirnseite}{32}{subsubsection*.48}
+\contentsline {subsubsection}{L\IeC {\"a}ngsseite an L\IeC {\"a}ngsseite}{33}{subsubsection*.50}
+\contentsline {subsubsection}{Ecke an Ecke}{33}{subsubsection*.52}
+\contentsline {subsubsection}{Stirnseite aufsto\IeC {\ss }en}{34}{subsubsection*.54}
+\contentsline {subsubsection}{Erkenntnisse aus den Versuchen}{34}{subsubsection*.56}
+\contentsline {subsection}{\numberline {4.2.2}Algorithmus zur Mustererkennung}{34}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Konzepte zur Identifizierung von Bump-Partnern}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Identifizierung \IeC {\"u}ber iBeacon Ger\IeC {\"a}te-IDs}{36}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Identifizierung durch charakteristische Bump-Daten}{36}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Vergleich der Konzepte}{37}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Konzepte zum Datenaustausch}{38}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Datenaustausch \IeC {\"u}ber lokale Netzwerke}{38}{subsection.4.4.1}
+\contentsline {subsubsection}{Ger\IeC {\"a}teidentifizierung in lokalen Netzwerken}{38}{subsubsection*.58}
+\contentsline {subsubsection}{Ablauf mit iBeacon Ger\IeC {\"a}te-IDs}{40}{subsubsection*.61}
+\contentsline {subsubsection}{Ablauf mit Timestamp und GPS}{43}{subsubsection*.64}
+\contentsline {subsection}{\numberline {4.4.2}Datenaustausch \IeC {\"u}ber Webserver}{45}{subsection.4.4.2}
+\contentsline {subsubsection}{Ablauf der Kommunikation}{45}{subsubsection*.67}
+\contentsline {subsection}{\numberline {4.4.3}Vergleich der Konzepte}{48}{subsection.4.4.3}
+\contentsline {chapter}{\numberline {5}Demonstrator Applikation}{49}{chapter.5}
+\contentsline {subsubsection}{}{50}{subsubsection*.69}
+\contentsline {subsubsection}{}{51}{subsubsection*.71}
+\contentsline {chapter}{\numberline {6}Zusammenfassung und Ausblick}{53}{chapter.6}
+\contentsline {chapter}{Abk\IeC {\"u}rzungsverzeichnis}{vii}{chapter*.73}
+\contentsline {chapter}{Tabellenverzeichnis}{ix}{section*.74}
+\contentsline {chapter}{Abbildungsverzeichnis}{xi}{section*.76}
+\contentsline {chapter}{Literaturverzeichnis}{xiii}{chapter*.78}
