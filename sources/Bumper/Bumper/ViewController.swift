@@ -17,6 +17,7 @@ import AudioToolbox
 
 class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationManagerDelegate, CBPeripheralManagerDelegate, MCNearbyServiceAdvertiserDelegate, MCSessionDelegate, MCNearbyServiceBrowserDelegate  {
 
+    // GUI
     var header: UIView!
     var footer: UIView!
     var body: UIView!
@@ -27,40 +28,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
     var toViewController: UIViewController!
     var pan = false
     var start: CGPoint!
-    
-    //iBeacon
-    var sender = false
-    var major: CLBeaconMajorValue?
-    var minor: CLBeaconMajorValue?
-    var majorString: String?
-    var minorString: String?
-    var networkIdentifier: Int!
-    
-    var beaconManager: CBPeripheralManager!
-    var locationManager: CLLocationManager!
-    let beaconUUID = NSUUID(UUIDString: "EBEFD083-70A2-47C8-9837-E7B5634DF524")
-    var transmitRegion: CLBeaconRegion?
-    var rangeRegion = CLBeaconRegion()
-    var data = NSDictionary()
-    let beaconIdentifier = "bumperBeacon"
-    
-    
-
-    
-   
-    // Constants
-    var serviceType: String?
-    
-    // Optionals
-    var localSession: MCSession?
-    var advertiser: MCNearbyServiceAdvertiser?
-    var serviceBrowser: MCNearbyServiceBrowser?
-    var localPeerID: MCPeerID?
-    
-    // Set properties
-    var connectedPeers: [MCPeerID] = []
-    var buttonCounter = 0
-
     
     //Accelerometer
     let motionManager = CMMotionManager()
@@ -81,14 +48,37 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
     var arrayY: [Double] = []
     var arrayZ: [Double] = []
     
+    //iBeacon
+    var sender = false
+    var major: CLBeaconMajorValue?
+    var minor: CLBeaconMajorValue?
+    var majorString: String?
+    var minorString: String?
+    var networkIdentifier: Int!
     
+    var beaconManager: CBPeripheralManager!
+    var locationManager: CLLocationManager!
+    let beaconUUID = NSUUID(UUIDString: "EBEFD083-70A2-47C8-9837-E7B5634DF524")
+    var transmitRegion: CLBeaconRegion?
+    var rangeRegion = CLBeaconRegion()
+    var data = NSDictionary()
+    let beaconIdentifier = "bumperBeacon"
     
-    var closestBeaconDistance: CLLocationAccuracy = 0.0
+    var closestBeaconDistance: CLLocationAccuracy!
     var closestBeaconMajor: NSNumber = -1
     var closestBeaconMinor: NSNumber = -1
     var foundPeerMajor: NSNumber = -1
     var foundPeerMinor: NSNumber = -1
+    
+    //Multipeer Connectivity
+    var serviceType: String?
     var dictionary = Dictionary<String, String>()
+    var localSession: MCSession?
+    var advertiser: MCNearbyServiceAdvertiser?
+    var serviceBrowser: MCNearbyServiceBrowser?
+    var localPeerID: MCPeerID?
+    var connectedPeers: [MCPeerID] = []
+    var receivedImage: UIImage!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -175,121 +165,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
 
     }
     
-//    func accelero(sender: UIButton!) {
-//        if (!accelero) {
-//            arrayX.removeAll(keepCapacity: false)
-//            arrayY.removeAll(keepCapacity: false)
-//            arrayZ.removeAll(keepCapacity: false)
-//            motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: accelerationUpdated)
-//            accelero = true
-//        } else {
-//            motionManager.stopAccelerometerUpdates()
-//            println("accelX")
-//            for value in arrayX {
-//                println(value)
-//            }
-//            println()
-//            println("accelY")
-//            for value in arrayY {
-//                println(value)
-//            }
-//            println()
-//            println("accelZ")
-//            for value in arrayZ {
-//                println(value)
-//            }
-//            accelero = false
-//        }
-//    }
-
-    func accelerationUpdated(accelerometerData: CMAccelerometerData!, error: NSError!) {
-        if (error != nil) {
-            NSLog("\(error)")
-        }
-        accelY = accelerometerData.acceleration.y - ( (accelerometerData.acceleration.y * kFilteringFactor) + (accelY * (1.0 - kFilteringFactor)) )
-        accelX = accelerometerData.acceleration.x - ( (accelerometerData.acceleration.x * kFilteringFactor) + (accelX * (1.0 - kFilteringFactor)) )
-        accelZ = accelerometerData.acceleration.z - ( (accelerometerData.acceleration.z * kFilteringFactor) + (accelZ * (1.0 - kFilteringFactor)) )
-        
-        if (accelX < 0 || prevAccelX < 0) {
-            deltaX = abs(accelX) + abs(prevAccelX)
-        } else {
-            deltaX = abs(abs(accelX) - abs(prevAccelX))
-        }
-        if (accelY < 0 || prevAccelY < 0) {
-            deltaY = abs(accelY) + abs(prevAccelY)
-        } else {
-            deltaX = abs(abs(accelY) - abs(prevAccelY))
-        }
-        if (accelZ < 0 || prevAccelZ < 0) {
-            deltaZ = abs(accelZ) + abs(prevAccelZ)
-        } else {
-            deltaZ = abs(abs(accelZ) - abs(prevAccelZ))
-        }
-        
-        if ((deltaX > 0.3 && deltaY > 0.5 && deltaZ > 0.1) && !recording) {
-            println(deltaX)
-            println(deltaY)
-            println(deltaZ)
-            arrayX.append(accelX)
-            arrayY.append(accelY)
-            arrayZ.append(accelZ)
-            recording = true
-        } else if (recording) {
-            if (arrayX.count < 31) {
-                arrayX.append(accelX)
-                arrayY.append(accelY)
-                arrayZ.append(accelZ)
-            } else {
-                recording = false
-                motionManager.stopAccelerometerUpdates()
-                checkForBump(arrayX, arrayy: arrayY, arrayz: arrayZ)
-            }
-        }
-        prevAccelY = accelY
-    }
-    
-    func countPeaks(array: NSArray!) -> Int {
-        var peaks = 0
-        for (var index = 1; index < array.count-1; index++) {
-            var value = array[index] as Double
-            var before = array[index-1] as Double
-            var next = array[index+1] as Double
-            if (value < before  && value < next || value > before && value > next) {
-                peaks++
-            }
-        }
-        println(peaks)
-        return peaks
-    }
-    
-    func checkForBump(arrayx: NSArray!, arrayy: NSArray!, arrayz: NSArray!) {
-        println("cheking")
-        var bump = false
-        var peaksX = countPeaks(arrayx)
-        var peaksY = countPeaks(arrayy)
-        var peaksZ = countPeaks(arrayz)
-        
-        if (peaksX >= arrayX.count-10 && peaksX <= arrayX.count-2 && peaksY >= arrayY.count-10 && peaksY <= arrayY.count-2 && peaksZ >= arrayZ.count-10 && peaksZ <= arrayZ.count-2) {
-            bump = true
-            println(bump)
-            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-            if(beaconManager == nil) {
-                startBeacon()
-            }
-        } else {
-            bump = false
-            motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: accelerationUpdated)
-        }
-        arrayX.removeAll(keepCapacity: false)
-        arrayY.removeAll(keepCapacity: false)
-        arrayZ.removeAll(keepCapacity: false)
-     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     func handleTap(recognizer: UITapGestureRecognizer) {
         var transitionOptions: UIViewAnimationOptions!
@@ -325,7 +204,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
                     var transitionOptions = UIViewAnimationOptions.TransitionFlipFromLeft
                     if (!flipped) {
                         UIView.transitionFromView(outBoxViewController.view, toView: inBoxViewController.view, duration: 1.0, options: transitionOptions, completion: { finished in
-                           self.flipped = true
+                            self.flipped = true
                         })
                     } else {
                         UIView.transitionFromView(inBoxViewController.view, toView: outBoxViewController.view, duration: 1.0, options: transitionOptions, completion: { finished in
@@ -351,7 +230,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
                 var distance = browserViewController.view.frame.minY - header.frame.height
                 if (touchBelowBrowser(touchStartLocation) || swipeGesture.numberOfTouchesRequired == 2 && inSideBrowserBounds(touchStartLocation)) {
                     UIView.animateWithDuration(0.5, delay: 0, options: .CurveLinear , animations: {
-                            self.browserViewController.view.center = CGPointMake(self.browserViewController.view.center.x, self.browserViewController.view.center.y  - distance)
+                        self.browserViewController.view.center = CGPointMake(self.browserViewController.view.center.x, self.browserViewController.view.center.y  - distance)
                         }, completion: {
                             (value: Bool) in
                             UIView.animateWithDuration(0.5, delay: 0, options: .CurveLinear , animations: {
@@ -369,6 +248,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
                         self.browserViewController.view.center = CGPointMake(self.browserViewController.view.center.x, self.browserViewController.view.center.y  + distance)
                         }, completion: {
                             (value: Bool) in
+                            self.saveImage(self.receivedImage)
                             UIView.animateWithDuration(0.5, delay: 0, options: .CurveLinear , animations: {
                                 self.browserViewController.view.center = startLocation
                                 }, completion: {
@@ -401,93 +281,106 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
     func inSideBrowserBounds(touchStartLocation: CGPoint) -> Bool {
         return (touchStartLocation.x >= browserViewController.view.frame.minX && touchStartLocation.x <= browserViewController.view.frame.maxX && touchStartLocation.y >= browserViewController.view.frame.minY && touchStartLocation.y <= browserViewController.view.frame.maxY)
     }
-    
-    func locationManager(manager: CLLocationManager!, didRangeBeacons beacons: [CLBeacon]!, inRegion region: CLBeaconRegion!) {
-        let filteredBeacons = beacons.filter( { (beacon: CLBeacon) -> Bool in
-            return beacon.proximity == CLProximity.Immediate
-        })
+
+    //Accelerometer Updates, check if bumped
+    func accelerationUpdated(accelerometerData: CMAccelerometerData!, error: NSError!) {
+        if (error != nil) {
+            NSLog("\(error)")
+        }
+        accelY = accelerometerData.acceleration.y - ( (accelerometerData.acceleration.y * kFilteringFactor) + (accelY * (1.0 - kFilteringFactor)) )
+        accelX = accelerometerData.acceleration.x - ( (accelerometerData.acceleration.x * kFilteringFactor) + (accelX * (1.0 - kFilteringFactor)) )
+        accelZ = accelerometerData.acceleration.z - ( (accelerometerData.acceleration.z * kFilteringFactor) + (accelZ * (1.0 - kFilteringFactor)) )
         
+        if (accelX < 0 || prevAccelX < 0) {
+            deltaX = abs(accelX) + abs(prevAccelX)
+        } else {
+            deltaX = abs(abs(accelX) - abs(prevAccelX))
+        }
+        if (accelY < 0 || prevAccelY < 0) {
+            deltaY = abs(accelY) + abs(prevAccelY)
+        } else {
+            deltaX = abs(abs(accelY) - abs(prevAccelY))
+        }
+        if (accelZ < 0 || prevAccelZ < 0) {
+            deltaZ = abs(accelZ) + abs(prevAccelZ)
+        } else {
+            deltaZ = abs(abs(accelZ) - abs(prevAccelZ))
+        }
+        
+        if ((deltaX > 0.3 && deltaY > 0.5 && deltaZ > 0.1) && !recording) {
+            println("Accelerometer deltaX: " + deltaX.description)
+            println("Accelerometer deltaY: " + deltaY.description)
+            println("Accelerometer deltaZ: " + deltaZ.description)
+            arrayX.append(accelX)
+            arrayY.append(accelY)
+            arrayZ.append(accelZ)
+            recording = true
+        } else if (recording) {
+            if (arrayX.count < 31) {
+                arrayX.append(accelX)
+                arrayY.append(accelY)
+                arrayZ.append(accelZ)
+            } else {
+                recording = false
+                motionManager.stopAccelerometerUpdates()
+                checkForBump(arrayX, arrayy: arrayY, arrayz: arrayZ)
+            }
+        }
+        prevAccelY = accelY
+    }
+    
+    //check recorded Accelerometer values for bump
+    func checkForBump(arrayx: NSArray!, arrayy: NSArray!, arrayz: NSArray!) {
+        println("check for bump")
+        var bump = false
+        var peaksX = countPeaks(arrayx)
+        var peaksY = countPeaks(arrayy)
+        var peaksZ = countPeaks(arrayz)
+        
+        if (peaksX >= arrayX.count-10 && peaksX <= arrayX.count-2 && peaksY >= arrayY.count-10 && peaksY <= arrayY.count-2 && peaksZ >= arrayZ.count-10 && peaksZ <= arrayZ.count-2) {
+            bump = true
+            if (bump) {
+                println("detected bump")
+            }
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+            if(beaconManager == nil) {
+                startBeacon()
+            }
+        } else {
+            bump = false
+            motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: accelerationUpdated)
+        }
+        arrayX.removeAll(keepCapacity: false)
+        arrayY.removeAll(keepCapacity: false)
+        arrayZ.removeAll(keepCapacity: false)
+    }
 
+    //count Peaks in accelerometer data
+    func countPeaks(array: NSArray!) -> Int {
+        var peaks = 0
+        for (var index = 1; index < array.count-1; index++) {
+            var value = array[index] as Double
+            var before = array[index-1] as Double
+            var next = array[index+1] as Double
+            if (value < before  && value < next || value > before && value > next) {
+                peaks++
+            }
+        }
+        return peaks
+    }
 
-            
-//            if (filteredBeacons.last?.major.integerValue > Int(major!)) {
-//                sender = false
-//                chef.text = sender.description
-//                networkIdentifier = filteredBeacons.last?.major.integerValue
-//                networkIdendifierLabel.text = networkIdentifier.description
-//                beaconManager.stopAdvertising()
-//                locationManager.stopRangingBeaconsInRegion(rangeRegion)
-//                //Browser
-//                println(networkIdentifier.description)
-//                serviceType = "Bump-" + String(networkIdentifier)
-//                browser = MCNearbyServiceBrowser(peer: localPeerID!, serviceType: serviceType)
-//                browser!.delegate = self
-//                browser!.startBrowsingForPeers()
-//            } else {
-//                sender = true
-//                chef.text = sender.description
-//                networkIdentifier = Int(major!)
-//                networkIdendifierLabel.text = networkIdentifier.description
-//                beaconManager.stopAdvertising()
-//                locationManager.stopRangingBeaconsInRegion(rangeRegion)
-//                
-//                // Advertiser
-//                println(networkIdentifier.description)
-//                serviceType = "Bump-" + String(networkIdentifier)
-//                advertiser = MCNearbyServiceAdvertiser(peer: localPeerID!, discoveryInfo: nil, serviceType: serviceType)
-//                advertiser!.delegate = self
-//                advertiser!.startAdvertisingPeer()
-                
-                
-                
-//            }
+    //all found beacons in range
+    func locationManager(manager: CLLocationManager!, didRangeBeacons beacons: [CLBeacon]!, inRegion region: CLBeaconRegion!) {
         if (!beacons.isEmpty) {
-        for beac in beacons {
-            var beacon:CLBeacon = beac as CLBeacon
-//            switch beacon.proximity {
-//            case CLProximity.Far:
-//                self.distance.text = "Far"
-//            case CLProximity.Near:
-//                self.distance.text = "Near"
-//            case CLProximity.Immediate:
-//                self.distance.text = "Immediate"
-//            case CLProximity.Unknown:
-//                self.distance.text = "Unknown Proximity"
-//                return
-//            }
-            
+            var beacon:CLBeacon = beacons.first!
             closestBeaconDistance = beacon.accuracy
             closestBeaconMajor = beacon.major
             closestBeaconMinor = beacon.minor
-//            println("foundBeacon")
-//            println("beaconMajor " +  beacon.major.description)
-//            println("beaconMinor " + beacon.minor.description)
-//            println("beaconDistance "  + beacon.accuracy.description)
-        }
             if (serviceBrowser == nil) {
                 setupNetwork()
             }
         }
         
-}
-    
-    func setupNetwork() {
-        localPeerID = MCPeerID(displayName: UIDevice.currentDevice().name)
-        dictionary = ["Major": majorString!, "Minor": minorString!]
-        serviceType = "Bump-Network"
-        
-        serviceBrowser = MCNearbyServiceBrowser(peer: localPeerID!, serviceType: serviceType)
-        serviceBrowser!.delegate = self
-        
-        advertiser = MCNearbyServiceAdvertiser(peer: localPeerID!, discoveryInfo: dictionary, serviceType: serviceType)
-        advertiser!.delegate = self
-        
-        serviceBrowser!.startBrowsingForPeers()
-        println("startBrowsingforPeers")
-
-        advertiser!.startAdvertisingPeer()
-        println("startAdvertisingPeer")
-        println(connectedPeers.count)
     }
 
     func peripheralManagerDidUpdateState(peripheral: CBPeripheralManager!) {
@@ -538,6 +431,25 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
         locationManager.startRangingBeaconsInRegion(rangeRegion)
     }
     
+    func setupNetwork() {
+        localPeerID = MCPeerID(displayName: UIDevice.currentDevice().name)
+        dictionary = ["Major": majorString!, "Minor": minorString!]
+        serviceType = "Bump-Network"
+        
+        serviceBrowser = MCNearbyServiceBrowser(peer: localPeerID!, serviceType: serviceType)
+        serviceBrowser!.delegate = self
+        
+        advertiser = MCNearbyServiceAdvertiser(peer: localPeerID!, discoveryInfo: dictionary, serviceType: serviceType)
+        advertiser!.delegate = self
+        
+        serviceBrowser!.startBrowsingForPeers()
+        println("startBrowsingforPeers")
+        
+        advertiser!.startAdvertisingPeer()
+        println("startAdvertisingPeer")
+        println(connectedPeers.count)
+    }
+    
     // MCNearbyServiceAdvertiserDelegate
     func advertiser(advertiser: MCNearbyServiceAdvertiser!, didReceiveInvitationFromPeer peerID: MCPeerID!, withContext context: NSData!, invitationHandler: ((Bool, MCSession!) -> Void)!) {
         println("Received invitation from \(peerID.displayName)")
@@ -571,12 +483,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
         if let minor = optionalMinor {
             foundPeerMinor = minor.toInt()!
         }
-        println("Multi foundPeerMajor " + foundPeerMajor.description)
-        println("Multi foundPeerMinor " + foundPeerMinor.description)
-        println("Multi closestPeerMajor " +  closestBeaconMajor.description)
-        println("Multi closestPeerMinor " + closestBeaconMinor.description)
-        println(foundPeerMajor == closestBeaconMajor)
-        println(foundPeerMinor == closestBeaconMinor)
+        println("Multipeer: foundPeerMajor " + foundPeerMajor.description)
+        println("Multipeer: foundPeerMinor " + foundPeerMinor.description)
+        println("iBeacon:   closestBeaconMajor " +  closestBeaconMajor.description)
+        println("iBeacon:   closestBeaconMinor " + closestBeaconMinor.description)
 
         if (foundPeerMajor == closestBeaconMajor && major?.description  > foundPeerMajor.description) {
             println("Setting up session")
@@ -594,7 +504,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
     }
     
     
-    // MCSessionDelegate
     func session(session: MCSession!, peer peerID: MCPeerID!, didChangeState state: MCSessionState) {
         switch state {
             case .NotConnected:
@@ -602,8 +511,6 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
                 dispatch_async(dispatch_get_main_queue(), {
                     self.disconnect()
                 })
-//                serviceBrowser!.startBrowsingForPeers()
-//                advertiser!.startAdvertisingPeer()
             case .Connecting:
                 println("State Changed to Connecting")
                 locationManager.stopRangingBeaconsInRegion(rangeRegion)
@@ -661,8 +568,8 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
     func session(session: MCSession!, didFinishReceivingResourceWithName resourceName: String!, fromPeer peerID: MCPeerID!, atURL localURL: NSURL!, withError error: NSError!) {
         println("Empfang der Datei " + resourceName + " abgeschlossen")
         dispatch_async(dispatch_get_main_queue(), {
-            var image =  UIImage(data: NSData(contentsOfURL: localURL)!)
-            var imageView = UIImageView(image: image)
+            self.receivedImage =  UIImage(data: NSData(contentsOfURL: localURL)!)
+            var imageView = UIImageView(image: self.receivedImage)
             imageView.frame = Global.browserContentFrame
             var transitionOptions = UIViewAnimationOptions.TransitionFlipFromLeft
 
@@ -670,27 +577,19 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
                 self.flipped = true
                 self.inBoxViewController.view.addSubview(imageView)
             })
-            
-//            var assetsLibrary = ALAssetsLibrary()
-//            assetsLibrary.writeImageToSavedPhotosAlbum(image?.CGImage, orientation: .Up, completionBlock: { (url: NSURL!, error: NSError!) -> Void in
-//                if ((error) != nil) {
-//                    println("Error: " + error.localizedDescription)
-//                } else {
-//
-//                }
-//            })
         })
     }
-//
-//    func incrementCounterAndSend(sender: UIButton!) {
-//        buttonCounter++
-//        let data = "Message Nr. \(buttonCounter)".dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)
-//        var error: NSError? = nil
-//        
-//        if (!localSession!.sendData(data, toPeers: connectedPeers, withMode: MCSessionSendDataMode.Reliable, error: &error)){
-//            println("ERROR \(error)")
-//        }
-//    }
+
+    func saveImage(image: UIImage) {
+        var assetsLibrary = ALAssetsLibrary()
+            assetsLibrary.writeImageToSavedPhotosAlbum(image.CGImage, orientation: .Up, completionBlock: { (url: NSURL!, error: NSError!) -> Void in
+            if ((error) != nil) {
+                println("Error: " + error.localizedDescription)
+                } else {
+                println("image saved")
+            }
+        })
+    }
     
     func disconnect() {
         localSession?.disconnect()
