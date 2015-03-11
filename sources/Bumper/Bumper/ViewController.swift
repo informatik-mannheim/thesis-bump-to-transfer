@@ -326,7 +326,9 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
                 checkForBump(arrayX, arrayy: arrayY, arrayz: arrayZ)
             }
         }
+        prevAccelX = accelX
         prevAccelY = accelY
+        prevAccelZ = accelZ
     }
     
     //check recorded Accelerometer values for bump
