@@ -299,7 +299,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate, CLLocationM
         if (accelY < 0 || prevAccelY < 0) {
             deltaY = abs(accelY) + abs(prevAccelY)
         } else {
-            deltaX = abs(abs(accelY) - abs(prevAccelY))
+            deltaY = abs(abs(accelY) - abs(prevAccelY))
         }
         if (accelZ < 0 || prevAccelZ < 0) {
             deltaZ = abs(accelZ) + abs(prevAccelZ)
