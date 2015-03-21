@@ -5,67 +5,73 @@ The style file: alpha.bst
 Database file #1: literatur.bib
 Warning--entry type for "Google2014:Online" isn't style-file defined
 --line 1 of file literatur.bib
+Warning--entry type for "wiki:WIFI-Direct" isn't style-file defined
+--line 43 of file literatur.bib
 Warning--entry type for "AppleAccelerometer:Online" isn't style-file defined
---line 71 of file literatur.bib
+--line 68 of file literatur.bib
 Warning--entry type for "AppleLocationServices:Online" isn't style-file defined
---line 80 of file literatur.bib
+--line 76 of file literatur.bib
 Warning--entry type for "AppleMultipeer:Online" isn't style-file defined
---line 89 of file literatur.bib
+--line 84 of file literatur.bib
 Warning--entry type for "AppleCollectionTypes:Online" isn't style-file defined
---line 98 of file literatur.bib
+--line 92 of file literatur.bib
 Warning--string name "okt" is undefined
---line 101 of file literatur.bib
+--line 95 of file literatur.bib
 Warning--entry type for "AppleMCNearbyServiceAdvertiser:Online" isn't style-file defined
---line 107 of file literatur.bib
+--line 100 of file literatur.bib
 Warning--string name "okt" is undefined
---line 110 of file literatur.bib
+--line 103 of file literatur.bib
 Warning--entry type for "AppleNSData:Online" isn't style-file defined
---line 116 of file literatur.bib
+--line 108 of file literatur.bib
 Warning--entry type for "AndroidDiscovery:Online" isn't style-file defined
---line 192 of file literatur.bib
+--line 175 of file literatur.bib
 Warning--entry type for "AboutBonjour:Online" isn't style-file defined
---line 201 of file literatur.bib
+--line 183 of file literatur.bib
+Warning--entry type for "wiki:iBeacon" isn't style-file defined
+--line 192 of file literatur.bib
+Warning--entry type for "wiki:GPS" isn't style-file defined
+--line 199 of file literatur.bib
 Warning--entry type for "LTE:Online" isn't style-file defined
---line 227 of file literatur.bib
+--line 206 of file literatur.bib
 Warning--entry type for "HDSPA:Online" isn't style-file defined
---line 234 of file literatur.bib
+--line 212 of file literatur.bib
 Warning--entry type for "EstimoteBeaconSignal:Online" isn't style-file defined
---line 241 of file literatur.bib
+--line 218 of file literatur.bib
 Warning--string name "dez" is undefined
---line 244 of file literatur.bib
+--line 221 of file literatur.bib
 Warning--entry type for "BumpPicPhone:Online" isn't style-file defined
---line 260 of file literatur.bib
+--line 236 of file literatur.bib
 Warning--entry type for "Bump:Online" isn't style-file defined
---line 270 of file literatur.bib
+--line 245 of file literatur.bib
 Warning--entry type for "HoccerPics:Online" isn't style-file defined
---line 280 of file literatur.bib
+--line 254 of file literatur.bib
 Warning--entry type for "HinkleyPic2:Online" isn't style-file defined
---line 289 of file literatur.bib
+--line 261 of file literatur.bib
 Warning--entry type for "Hoccer:Online" isn't style-file defined
---line 300 of file literatur.bib
+--line 271 of file literatur.bib
 Warning--string name "okt" is undefined
---line 303 of file literatur.bib
+--line 274 of file literatur.bib
 You've used 34 entries,
             2543 wiz_defined-function locations,
-            737 strings with 8808 characters,
+            745 strings with 10899 characters,
 and the built_in function-call counts, 11095 in all, are:
 = -- 1089
 > -- 423
 < -- 30
-+ -- 138
++ -- 137
 - -- 129
 * -- 622
 := -- 1748
 add.period$ -- 107
 call.type$ -- 34
 change.case$ -- 186
-chr.to.int$ -- 27
+chr.to.int$ -- 28
 cite$ -- 34
 duplicate$ -- 467
 empty$ -- 923
 format.name$ -- 187
 if$ -- 2329
-int.to.chr$ -- 8
+int.to.chr$ -- 7
 int.to.str$ -- 0
 missing$ -- 14
 newline$ -- 174
@@ -74,7 +80,7 @@ pop$ -- 305
 preamble$ -- 1
 purify$ -- 222
 quote$ -- 0
-skip$ -- 419
+skip$ -- 420
 stack$ -- 0
 substring$ -- 426
 swap$ -- 77
@@ -86,4 +92,4 @@ warning$ -- 0
 while$ -- 93
 width$ -- 36
 write$ -- 426
-(There were 21 warnings)
+(There were 24 warnings)

@@ -4,52 +4,53 @@
 \bibitem[{3GP}a]{HDSPA:Online}
 {3GPP}.
 \newblock Hdspa+. {@ONLINE}.
-\newblock Zuletzt besucht am 15.12.2014.
+\newblock \url{http://www.3gpp.org/technologies/keywords-acronyms/99-hspa}
+  (Zuletzt besucht am 15.12.2014).
 
 \bibitem[{3GP}b]{LTE:Online}
 {3GPP}.
 \newblock Lte. {@ONLINE}.
-\newblock Zuletzt besucht am 15.12.2014.
+\newblock \url{http://www.3gpp.org/technologies/keywords-acronyms/98-lte}
+  (Zuletzt besucht am 15.12.2014).
 
 \bibitem[AB12]{agrawal2012near}
 Pankaj Agrawal and Sharad Bhuraria.
 \newblock Near field communication.
 \newblock {\em IT Matters}, 67, 2012.
 
-\bibitem[{App}13a]{AppleMultipeer:Online}
-{Apple Computer}.
-\newblock About multipeer connectivity. {@ONLINE}, September 2013.
-\newblock Zuletzt besucht am 04.01.2015.
-
-\bibitem[{App}13b]{AppleMCNearbyServiceAdvertiser:Online}
+\bibitem[{App}13]{AppleMCNearbyServiceAdvertiser:Online}
 {Apple Computer}.
 \newblock Mcnearbyserviceadvertiser. {@ONLINE}, 2013.
-\newblock Zuletzt besucht am 11.02.2015.
+\newblock
+  \url{https://developer.apple.com/library/ios/documentation/MultipeerConnectivity/Reference/MCNearbyServiceAdvertiserClassRef/#//apple_ref/occ/instm/MCNearbyServiceAdvertiser/initWithPeer:discoveryInfo:serviceType:}
+  (Zuletzt besucht am 11.02.2015).
 
 \bibitem[{App}14a]{AboutBonjour:Online}
 {Apple Computer}.
 \newblock About bonjour. {@ONLINE}, April 2014.
-\newblock Zuletzt besucht am 19.02.2015.
+\newblock
+  \url{https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/NetServices/Introduction.html
+  } (Zuletzt besucht am 19.02.2015).
 
 \bibitem[{App}14b]{AppleCollectionTypes:Online}
 {Apple Computer}.
 \newblock Collection types. {@ONLINE}, 2014.
-\newblock Zuletzt besucht am 11.02.2015.
+\newblock
+  \url{https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/CollectionTypes.html}
+  (Zuletzt besucht am 11.02.2015).
 
 \bibitem[{App}14c]{AppleLocationServices:Online}
 {Apple Computer}.
 \newblock ios 7: Grundlagen zu den ortungsdiensten. {@ONLINE}, June 2014.
-\newblock Zuletzt besucht am 15.12.2014.
+\newblock \url{http://support.apple.com/de-de/HT5594} (Zuletzt besucht am
+  15.12.2014).
 
 \bibitem[{App}14d]{AppleNSData:Online}
 {Apple Computer}.
 \newblock Nsdata. {@ONLINE}, September 2014.
-\newblock Zuletzt besucht am 11.02.2015.
-
-\bibitem[{App}15]{AppleAccelerometer:Online}
-{Apple Computer}.
-\newblock Motion events. {@ONLINE}, February 2015.
-\newblock Zuletzt besucht am 15.12.2014.
+\newblock
+  \url{https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSData_Class/}
+  (Zuletzt besucht am 11.02.2015).
 
 \bibitem[Bau12]{baun2012computernetze}
 C.~Baun.
@@ -59,7 +60,7 @@ C.~Baun.
 \bibitem[{bum}13]{Bump:Online}
 {bump technologies}.
 \newblock Bump your computer. {@ONLINE}, February 2013.
-\newblock Zuletzt besucht am 14.02.2015.
+\newblock \url{http://blog.bu.mp } (Zuletzt besucht am 14.02.2015).
 
 \bibitem[Che02]{cheng2002service}
 Liang Cheng.
@@ -69,28 +70,50 @@ Liang Cheng.
 \bibitem[{Chr}11]{HinkleyPic2:Online}
 {Christian Remse}.
 \newblock Diese neuen technologien plant apple. {@ONLINE}, August 2011.
-\newblock Zuletzt besucht am 15.02.2015.
+\newblock
+  \url{http://www.pcwelt.de/ratgeber/Diese-neuen-Technologien-bringt-Apple-3335209.html
+  } (Zuletzt besucht am 15.02.2015).
+
+\bibitem[Com13]{AppleMultipeer:Online}
+Apple Computer.
+\newblock About multipeer connectivity. {@ONLINE}, September 2013.
+\newblock
+  \url{https://developer.apple.com/library/ios/documentation/MultipeerConnectivity/Reference/MultipeerConnectivityFramework/index.html#//apple_ref/doc/uid/TP40013328}
+  (Zuletzt besucht am 04.01.2015).
 
 \bibitem[Com14]{iBeacon:2014}
 Apple Computer.
 \newblock {\em Getting Startet with iBeacon}.
 \newblock Apple Computer, 1 edition, 6 2014.
 
+\bibitem[Com15]{AppleAccelerometer:Online}
+Apple Computer.
+\newblock Motion events. {@ONLINE}, February 2015.
+\newblock
+  \url{https://developer.apple.com/library/ios/documentation/EventHandling/Conceptual/EventHandlingiPhoneOS/motion_event_basics/motion_event_basics.html}
+  (Zuletzt besucht am 15.12.2014).
+
 \bibitem[{Est}14]{EstimoteBeaconSignal:Online}
 {Estimote, Inc.}
 \newblock Beacons' signal characteristics. {@ONLINE}, 2014.
-\newblock Zuletzt besucht am 09.01.2015.
+\newblock
+  \url{https://community.estimote.com/hc/en-us/articles/201029223-Beacons-signal-characteristics-
+  } (Zuletzt besucht am 09.01.2015).
 
 \bibitem[{Goo}12]{Google2014:Online}
 {Google Inc.}
 \newblock The new multi-screen world: Understanding cross-pllattform consumer
   behavior. {@ONLINE}, August 2012.
-\newblock Zuletzt besucht am 13.10.2014.
+\newblock
+  \url{http://think.withgoogle.com/databoard/media/pdfs/the-new-multi-screen-world-study_research-studies.pdf}
+  (Zuletzt besucht am 13.10.2014).
 
 \bibitem[{Goo}15]{AndroidDiscovery:Online}
 {Google}.
 \newblock Network service discovery. {@ONLINE}, 2015.
-\newblock Zuletzt besucht am 21.02.2015.
+\newblock
+  \url{http://developer.android.com/training/connect-devices-wirelessly/nsd.html
+  } (Zuletzt besucht am 21.02.2015).
 
 \bibitem[Hin03]{Hinckley:2003:SGM:964696.964713}
 Ken Hinckley.
@@ -103,7 +126,9 @@ Ken Hinckley.
 {Landon Robinson}.
 \newblock Bump and flock apps being discontinued this month. {@ONLINE}, January
   2014.
-\newblock Zuletzt besucht am 14.02.2015.
+\newblock
+  \url{http://www.besttechie.com/2014/01/01/bump-and-flock-apps-being-discontinued-this-month/
+  } (Zuletzt besucht am 14.02.2015).
 
 \bibitem[LG10]{lubbers2010html5}
 Peter Lubbers and Frank Greco.
@@ -125,7 +150,8 @@ Andr{\'e}s Lucero, Jussi Holopainen, and Tero Jokela.
 \bibitem[{Maa}11]{Hoccer:Online}
 {Maarten Jansen}.
 \newblock App review: Hoccer. {@ONLINE}, 2011.
-\newblock Zuletzt besucht am 14.02.2015.
+\newblock \url{http://mastersofmedia.hum.uva.nl/2011/10/09/app-review-hoccer/ }
+  (Zuletzt besucht am 14.02.2015).
 
 \bibitem[RDML05]{ravi2005activity}
 Nishkam Ravi, Nikhil Dandekar, Preetham Mysore, and Michael~L Littman.
@@ -140,7 +166,8 @@ Alex Rodriguez.
 \bibitem[{sal}]{HoccerPics:Online}
 {salesworker.com GmbH}.
 \newblock Hoccer. {@ONLINE}.
-\newblock Zuletzt besucht am 15.02.2015.
+\newblock \url{http://www.geprueft.de/profil/hoccer } (Zuletzt besucht am
+  15.02.2015).
 
 \bibitem[SS12]{schill2012verteilte}
 Alexander Schill and Thomas Springer.
@@ -160,19 +187,24 @@ Hanno Wirtz, Tobias Heer, Robert Backhaus, and Klaus Wehrle.
 
 \bibitem[Wik14a]{wiki:GPS}
 Wikipedia.
-\newblock Global positioning system --- wikipedia{,} die freie enzyklopädie,
-  2014.
-\newblock [Online; Stand 15. Dezember 2014].
+\newblock Global positioning system. {@ONLINE}, 2014.
+\newblock
+  \url{http://de.wikipedia.org/w/index.php?title=Global_Positioning_System&oldid=136577722}
+  (Zuletzt besucht am 15. Dezember 2014).
 
 \bibitem[Wik14b]{wiki:iBeacon}
 Wikipedia.
-\newblock Ibeacon --- wikipedia{,} the free encyclopedia, 2014.
-\newblock [Online; Stand 15-December-2014].
+\newblock Ibeacon. {@ONLINE}, 2014.
+\newblock
+  \url{http://en.wikipedia.org/w/index.php?title=IBeacon&oldid=637123428}
+  (Zuletzt besucht am 15-December-2014).
 
 \bibitem[Wik14c]{wiki:WIFI-Direct}
 Wikipedia.
-\newblock Wi-fi direct --- wikipedia{,} the free encyclopedia, 2014.
-\newblock [Online; Stand 28-October-2014].
+\newblock Wi-fi direct. {@ONLINE}, 2014.
+\newblock
+  \url{http://en.wikipedia.org/w/index.php?title=Wi-Fi_Direct&oldid=628824438}
+  (Zuletzt besucht am 28-October-2014).
 
 \bibitem[YTH{\etalchar{+}}06]{Yatani:2006:TII:1184855.1184874}
 Koji Yatani, Koiti Tamura, Keiichi Hiroki, Masanori Sugimoto, and Hiromichi
